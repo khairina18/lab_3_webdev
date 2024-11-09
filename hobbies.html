@@ -13,7 +13,7 @@
 
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f5f9;
+            background-color: #f9f2f6;
             color: #333;
             display: flex;
             flex-direction: column;
@@ -37,11 +37,11 @@
             color: #525e75;
         }
 
-        .content {
+        .container {
             display: flex;
-            flex-direction: row;
             gap: 20px;
-            max-width: 600px;
+            padding: 20px;
+            max-width: 1000px;
             margin-top: 30px;
         }
 
@@ -51,17 +51,33 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-left: 5px solid #f9d8db; /* pastel pink border */
-            border-image: round;
-            text-justify: center;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hobby-item h2 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #525e75;
         }
 
         .hobby-item img{
-            height: 120px;
-            width: 120px;
+            height: 150px;
+            width: 150px;
+            margin: 5px;
             border: 4px solid #b8e0f0;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
+        .hobby-item p {
+            margin-top: 15px;
+            text-align: justify;
+            font-size: 0.9em;
+            color: #555;
+        }
         .footer {
             margin-top: 20px;
             padding: 10px;
@@ -95,14 +111,15 @@
     </nav>
 </header>
 
-<section class="content">
+<div class="container">
     <div class="hobby-item">
-        <h2>Reading Novels </h2>
-        <img src="pelukis_jlnn.jpg">
-        <img src="arkitek.jpg">
-        <img src="impian.jpg">
-        <img src="bayang_sofea.jpg">
-        <img src="sofea.jpg"> 
+        <h2>Reading Inspiratonal Novels  </h2>
+        <div>
+            <img src="arkitek.jpg">
+            <img src="pelukis_jlnn.jpg">
+            <img src="impian.jpg">
+            <img src="sofea.jpg"> 
+        </div>
         <p>Reading novels is my favourite hobby. It is very relaxing and I love how I can interpret 
             the protagonist and the characters with my own imaginations. 
             Teme Abdullah is my favourite author and I had developed this hobby since the first book
@@ -110,9 +127,30 @@
             wants and write a really great plot. Plus, he knows how to keep the reader always curious
             and his novels will always be inspiring. He is a very good example that the young generation 
             these days can follow. The figure above shows the best-selling book
-            of Teme and I will recommend these book to every single human I know >3<. I also hope that you check them out too! </p>
+            of Teme and I will recommend these book to every single human I know. I also hope that you check them out too! 
+        </p>
     </div>
-</section>
+
+    <div class="hobby-item">
+        <h2>Marathon-Watching Korean Dramas </h2>
+        <div>
+            <img src="player4.jpg">
+            <img src="dots.jpg">
+            <img src="memorist.jpg">
+            <img src="doctors.jpg">
+        </div>
+        <p>My hobby of marathon-watching action Korean dramas is an exciting escape that I deeply enjoy. 
+            Action-packed Korean dramas offer a unique combination of thrilling plots, complex characters, 
+            and stunning visuals that captivate my attention. Shows like "Memorist" and "Descendants of the 
+            Sun" feature intense action scenes and intricate storylines that keep me on the edge of my seat, 
+            making it easy to lose track of time and fully immerse myself in their world. 
+            This hobby isn’t just about entertainment, it allows me to experience various cultural aspects of Korea, 
+            from the language and customs to the fashion and lifestyle. Watching these dramas has subtly enhanced my 
+            understanding of Korean culture and has even inspired me to learn basic Korean phrases. Additionally, action 
+            dramas often focus on themes of courage, loyalty, and resilience, which leave me feeling motivated and uplifted. 
+        </p>
+    </div>
+</div>
 
 <footer class="footer">
     &copy; 2024 Nurkhairina Balqis
